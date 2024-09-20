@@ -15,23 +15,23 @@ main_menu = tk.Menu()
 
 #FILE
 #file icons
-new_image = Image.open('PROJECTS/TEXED/ICONS/New.png')
+new_image = Image.open('ICONS/New.png')
 new_image = new_image.resize((24, 24), Image.LANCZOS)  # Resize to 24x24 pixels (you can change the size)
 new_icon = ImageTk.PhotoImage(new_image)
 
-open_image = Image.open('PROJECTS/ICONS/open.png')
+open_image = Image.open('ICONS/open.png')
 open_image = open_image.resize((24, 24), Image.LANCZOS)
 open_icon = ImageTk.PhotoImage(open_image)
 
-save_image = Image.open('PROJECTS/ICONS/save.png')
+save_image = Image.open('ICONS/save.png')
 save_image = save_image.resize((24, 24), Image.LANCZOS)
 save_icon = ImageTk.PhotoImage(save_image)
 
-save_as_image = Image.open('PROJECTS/ICONS/save_as.png')
+save_as_image = Image.open('ICONS/save_as.png')
 save_as_image = save_as_image.resize((24, 24), Image.LANCZOS)
 save_as_icon = ImageTk.PhotoImage(save_as_image)
 
-exit_image = Image.open('PROJECTS/ICONS/exit.png')
+exit_image = Image.open('ICONS/exit.png')
 exit_image = exit_image.resize((24, 24), Image.LANCZOS)
 exit_icon = ImageTk.PhotoImage(exit_image)
 
@@ -40,23 +40,23 @@ file = tk.Menu(main_menu, tearoff=False)
 # EDIT
 #edit icons
 
-copy_image = Image.open('PROJECTS/ICONS/copy.png')
+copy_image = Image.open('ICONS/copy.png')
 copy_image = copy_image.resize((24, 24), Image.LANCZOS)  
 copy_icon = ImageTk.PhotoImage(copy_image)
 
-paste_image = Image.open('PROJECTS/ICONS/paste.png')
+paste_image = Image.open('ICONS/paste.png')
 paste_image = paste_image.resize((24, 24), Image.LANCZOS)
 paste_icon = ImageTk.PhotoImage(paste_image)
 
-cut_image = Image.open('PROJECTS/ICONS/cut.png')
+cut_image = Image.open('ICONS/cut.png')
 cut_image = cut_image.resize((24, 24), Image.LANCZOS)
 cut_icon = ImageTk.PhotoImage(cut_image)
 
-clear_all_image = Image.open('PROJECTS/ICONS/clear_all.png')
+clear_all_image = Image.open('ICONS/clear_all.png')
 clear_all_image = clear_all_image.resize((24, 24), Image.LANCZOS)
 clear_all_icon = ImageTk.PhotoImage(clear_all_image)
                                     
-find_image = Image.open('PROJECTS/ICONS/find.png')
+find_image = Image.open('ICONS/find.png')
 find_image = find_image.resize((24, 24), Image.LANCZOS)
 
 find_icon = ImageTk.PhotoImage(find_image)
@@ -66,11 +66,11 @@ edit = tk.Menu(main_menu, tearoff = False)
 #VIEW
 #view icons
 
-tool_bar_image = Image.open('PROJECTS/ICONS/tool_bar.png')
+tool_bar_image = Image.open('ICONS/tool_bar.png')
 tool_bar_image = tool_bar_image.resize((24, 24), Image.LANCZOS)
 tool_bar_icon = ImageTk.PhotoImage(tool_bar_image)
 
-status_bar_image = Image.open('PROJECTS/ICONS/status_bar.png')
+status_bar_image = Image.open('ICONS/status_bar.png')
 status_bar_image = status_bar_image.resize((24, 24), Image.LANCZOS)
 status_bar_icon = ImageTk.PhotoImage(status_bar_image)
 
@@ -79,39 +79,39 @@ view = tk.Menu(main_menu, tearoff = False)
 #COLOR THEME
 #color theme icons
 
-light_default_image = Image.open('PROJECTS/ICONS/light_default.png')
+light_default_image = Image.open('ICONS/light_default.png')
 light_default_image = light_default_image.resize((24, 24), Image.LANCZOS)  
 light_default_icon = ImageTk.PhotoImage(light_default_image)
 
-dark_image = Image.open('PROJECTS/ICONS/dark.png')
+dark_image = Image.open('ICONS/dark.png')
 dark_image = dark_image.resize((24, 24), Image.LANCZOS)
 dark_icon = ImageTk.PhotoImage(dark_image)
 
-red_image = Image.open('PROJECTS/ICONS/red.png')
+red_image = Image.open('ICONS/red.png')
 red_image = red_image.resize((24, 24), Image.LANCZOS)
 red_icon = ImageTk.PhotoImage(red_image)
 
-ocean_blue_image = Image.open('PROJECTS/ICONS/water.png')
+ocean_blue_image = Image.open('ICONS/water.png')
 ocean_blue_image = ocean_blue_image.resize((24, 24), Image.LANCZOS)
 ocean_blue_icon = ImageTk.PhotoImage(ocean_blue_image)
 
-forest_green_image = Image.open('PROJECTS/ICONS/forest.png')
+forest_green_image = Image.open('ICONS/forest.png')
 forest_green_image = forest_green_image.resize((24, 24), Image.LANCZOS)
 forest_green_icon = ImageTk.PhotoImage(forest_green_image)
 
-solarized_image = Image.open('PROJECTS/ICONS/solarized.png')
+solarized_image = Image.open('ICONS/solarized.png')
 solarized_image = solarized_image.resize((24, 24), Image.LANCZOS)
 solarized_icon = ImageTk.PhotoImage(solarized_image)
 
-lavender_image = Image.open('PROJECTS/ICONS/lavender.png')
+lavender_image = Image.open('ICONS/lavender.png')
 lavender_image = lavender_image.resize((24, 24), Image.LANCZOS)
 lavender_icon = ImageTk.PhotoImage(lavender_image)
 
-monokai_image = Image.open('PROJECTS/ICONS/monokai.png')
+monokai_image = Image.open('ICONS/monokai.png')
 monokai_image = monokai_image.resize((24, 24), Image.LANCZOS)
 monokai_icon = ImageTk.PhotoImage(monokai_image)
 
-sunset_image = Image.open('PROJECTS/ICONS/sunset.png')
+sunset_image = Image.open('ICONS/sunset.png')
 sunset_image = sunset_image.resize((24, 24), Image.LANCZOS)
 sunset_icon = ImageTk.PhotoImage(sunset_image)
 
@@ -163,7 +163,7 @@ font_size.current(4)
 font_size.grid(row = 0, column = 1, padx = 5)
 
 # bold button
-bold_image = Image.open('PROJECTS/ICONS/bold.png')
+bold_image = Image.open('ICONS/bold.png')
 bold_image = bold_image.resize((24, 24), Image.LANCZOS)  
 bold_icon = ImageTk.PhotoImage(bold_image)
 
@@ -171,7 +171,7 @@ bold_btn = ttk.Button(tool_bar, image = bold_icon)
 bold_btn.grid(row = 0, column = 2, padx = 5)
 
 # italic button
-italic_image = Image.open('PROJECTS/ICONS/italics.png')
+italic_image = Image.open('ICONS/italics.png')
 italic_image = italic_image.resize((24, 24), Image.LANCZOS)  
 italic_icon = ImageTk.PhotoImage(italic_image)
 
@@ -179,7 +179,7 @@ italic_btn = ttk.Button(tool_bar, image = italic_icon)
 italic_btn.grid(row = 0, column = 4, padx = 5)
 
 #underline button
-underline_image = Image.open('PROJECTS/ICONS/underline.png')
+underline_image = Image.open('ICONS/underline.png')
 underline_image = underline_image.resize((24, 24), Image.LANCZOS)  
 underline_icon = ImageTk.PhotoImage(underline_image)
 
@@ -188,7 +188,7 @@ underline_btn.grid(row = 0, column = 5, padx = 5)
 
 # font color button
 
-font_color_image = Image.open('PROJECTS/ICONS/font_color.png')
+font_color_image = Image.open('ICONS/font_color.png')
 font_color_image = font_color_image.resize((24, 24), Image.LANCZOS)  
 font_color_icon = ImageTk.PhotoImage(font_color_image)
 
@@ -197,7 +197,7 @@ font_color_btn.grid(row = 0, column = 6, padx = 5)
 
 #align_right
 
-align_right_image = Image.open('PROJECTS/ICONS/align_right.png')
+align_right_image = Image.open('ICONS/align_right.png')
 align_right_image = align_right_image.resize((24, 24), Image.LANCZOS)  
 align_right_icon = ImageTk.PhotoImage(align_right_image)
 
@@ -206,7 +206,7 @@ align_right_btn.grid(row = 0, column = 7, padx = 5)
 
 #align_left
 
-align_left_image = Image.open('PROJECTS/ICONS/align_left.png')
+align_left_image = Image.open('ICONS/align_left.png')
 align_left_image = align_left_image.resize((24, 24), Image.LANCZOS)  
 align_left_icon = ImageTk.PhotoImage(align_left_image)
 
@@ -215,7 +215,7 @@ align_left_btn.grid(row = 0, column = 8, padx = 5)
 
 #centre
 
-align_center_image = Image.open('PROJECTS/ICONS/align_center.png')
+align_center_image = Image.open('ICONS/align_center.png')
 align_center_image = align_center_image.resize((24, 24), Image.LANCZOS)  
 align_center_icon = ImageTk.PhotoImage(align_center_image)
 
@@ -224,7 +224,7 @@ align_center_btn.grid(row = 0, column = 9, padx = 5)
 
 #justify
 
-justify_image = Image.open('PROJECTS/ICONS/justify.png')
+justify_image = Image.open('ICONS/justify.png')
 justify_image = justify_image.resize((24, 24), Image.LANCZOS)  
 justify_icon = ImageTk.PhotoImage(justify_image)
 
