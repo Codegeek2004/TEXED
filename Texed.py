@@ -15,7 +15,7 @@ main_menu = tk.Menu()
 
 #FILE
 #file icons
-new_image = Image.open('PROJECTS/ICONS/New.png')
+new_image = Image.open('PROJECTS/TEXED/ICONS/New.png')
 new_image = new_image.resize((24, 24), Image.LANCZOS)  # Resize to 24x24 pixels (you can change the size)
 new_icon = ImageTk.PhotoImage(new_image)
 
@@ -58,6 +58,7 @@ clear_all_icon = ImageTk.PhotoImage(clear_all_image)
                                     
 find_image = Image.open('PROJECTS/ICONS/find.png')
 find_image = find_image.resize((24, 24), Image.LANCZOS)
+
 find_icon = ImageTk.PhotoImage(find_image)
 
 edit = tk.Menu(main_menu, tearoff = False)
