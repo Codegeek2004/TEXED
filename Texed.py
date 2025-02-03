@@ -2,11 +2,23 @@ import tkinter as tk
 from tkinter import ttk
 from tkinter import font, colorchooser, filedialog, messagebox
 import os
+import sys
 from PIL import Image, ImageTk
 
 main_application = tk.Tk()
 main_application.geometry('1200x800')
 main_application.title('Texed')
+
+
+if getattr(sys, 'frozen', False):
+    # Running as an EXE
+    base_path = sys._MEIPASS
+else:
+    # Running as a script
+    base_path = os.path.dirname(__file__)
+
+# Build the path to the 'ICONS' folder
+icons_path = os.path.join(base_path, "ICONS")
 
 
 #**************************************main_menu_start*********************************
@@ -15,23 +27,23 @@ main_menu = tk.Menu()
 
 #FILE
 #file icons
-new_image = Image.open('ICONS/New.png')
+new_image = Image.open(os.path.join(icons_path, 'New.png'))
 new_image = new_image.resize((24, 24), Image.LANCZOS)  # Resize to 24x24 pixels (you can change the size)
 new_icon = ImageTk.PhotoImage(new_image)
 
-open_image = Image.open('ICONS/open.png')
+open_image = Image.open(os.path.join(icons_path, 'open.png'))
 open_image = open_image.resize((24, 24), Image.LANCZOS)
 open_icon = ImageTk.PhotoImage(open_image)
 
-save_image = Image.open('ICONS/save.png')
+save_image = Image.open(os.path.join(icons_path, 'save.png'))
 save_image = save_image.resize((24, 24), Image.LANCZOS)
 save_icon = ImageTk.PhotoImage(save_image)
 
-save_as_image = Image.open('ICONS/save_as.png')
+save_as_image = Image.open(os.path.join(icons_path, 'save_as.png'))
 save_as_image = save_as_image.resize((24, 24), Image.LANCZOS)
 save_as_icon = ImageTk.PhotoImage(save_as_image)
 
-exit_image = Image.open('ICONS/exit.png')
+exit_image = Image.open(os.path.join(icons_path, 'exit.png'))
 exit_image = exit_image.resize((24, 24), Image.LANCZOS)
 exit_icon = ImageTk.PhotoImage(exit_image)
 
@@ -40,25 +52,24 @@ file = tk.Menu(main_menu, tearoff=False)
 # EDIT
 #edit icons
 
-copy_image = Image.open('ICONS/copy.png')
+copy_image = Image.open(os.path.join(icons_path, 'copy.png'))
 copy_image = copy_image.resize((24, 24), Image.LANCZOS)  
 copy_icon = ImageTk.PhotoImage(copy_image)
 
-paste_image = Image.open('ICONS/paste.png')
+paste_image = Image.open(os.path.join(icons_path, 'paste.png'))
 paste_image = paste_image.resize((24, 24), Image.LANCZOS)
 paste_icon = ImageTk.PhotoImage(paste_image)
 
-cut_image = Image.open('ICONS/cut.png')
+cut_image = Image.open(os.path.join(icons_path, 'cut.png'))
 cut_image = cut_image.resize((24, 24), Image.LANCZOS)
 cut_icon = ImageTk.PhotoImage(cut_image)
 
-clear_all_image = Image.open('ICONS/clear_all.png')
+clear_all_image = Image.open(os.path.join(icons_path, 'clear_all.png'))
 clear_all_image = clear_all_image.resize((24, 24), Image.LANCZOS)
 clear_all_icon = ImageTk.PhotoImage(clear_all_image)
                                     
-find_image = Image.open('ICONS/find.png')
+find_image = Image.open(os.path.join(icons_path, 'find.png'))
 find_image = find_image.resize((24, 24), Image.LANCZOS)
-
 find_icon = ImageTk.PhotoImage(find_image)
 
 edit = tk.Menu(main_menu, tearoff = False)
@@ -66,11 +77,11 @@ edit = tk.Menu(main_menu, tearoff = False)
 #VIEW
 #view icons
 
-tool_bar_image = Image.open('ICONS/tool_bar.png')
+tool_bar_image = Image.open(os.path.join(icons_path, 'tool_bar.png'))
 tool_bar_image = tool_bar_image.resize((24, 24), Image.LANCZOS)
 tool_bar_icon = ImageTk.PhotoImage(tool_bar_image)
 
-status_bar_image = Image.open('ICONS/status_bar.png')
+status_bar_image = Image.open(os.path.join(icons_path, 'status_bar.png'))
 status_bar_image = status_bar_image.resize((24, 24), Image.LANCZOS)
 status_bar_icon = ImageTk.PhotoImage(status_bar_image)
 
@@ -79,39 +90,40 @@ view = tk.Menu(main_menu, tearoff = False)
 #COLOR THEME
 #color theme icons
 
-light_default_image = Image.open('ICONS/light_default.png')
+light_default_image = Image.open(os.path.join(icons_path, 'light_default.png'))
 light_default_image = light_default_image.resize((24, 24), Image.LANCZOS)  
 light_default_icon = ImageTk.PhotoImage(light_default_image)
 
-dark_image = Image.open('ICONS/dark.png')
+
+dark_image = Image.open(os.path.join(icons_path, 'dark.png'))
 dark_image = dark_image.resize((24, 24), Image.LANCZOS)
 dark_icon = ImageTk.PhotoImage(dark_image)
 
-red_image = Image.open('ICONS/red.png')
+red_image = Image.open(os.path.join(icons_path, 'red.png'))
 red_image = red_image.resize((24, 24), Image.LANCZOS)
 red_icon = ImageTk.PhotoImage(red_image)
 
-ocean_blue_image = Image.open('ICONS/water.png')
+ocean_blue_image = Image.open(os.path.join(icons_path, 'water.png'))
 ocean_blue_image = ocean_blue_image.resize((24, 24), Image.LANCZOS)
 ocean_blue_icon = ImageTk.PhotoImage(ocean_blue_image)
 
-forest_green_image = Image.open('ICONS/forest.png')
+forest_green_image = Image.open(os.path.join(icons_path, 'forest.png'))
 forest_green_image = forest_green_image.resize((24, 24), Image.LANCZOS)
 forest_green_icon = ImageTk.PhotoImage(forest_green_image)
 
-solarized_image = Image.open('ICONS/solarized.png')
+solarized_image = Image.open(os.path.join(icons_path, 'solarized.png'))
 solarized_image = solarized_image.resize((24, 24), Image.LANCZOS)
 solarized_icon = ImageTk.PhotoImage(solarized_image)
 
-lavender_image = Image.open('ICONS/lavender.png')
+lavender_image = Image.open(os.path.join(icons_path, 'lavender.png'))
 lavender_image = lavender_image.resize((24, 24), Image.LANCZOS)
 lavender_icon = ImageTk.PhotoImage(lavender_image)
 
-monokai_image = Image.open('ICONS/monokai.png')
+monokai_image = Image.open(os.path.join(icons_path, 'monokai.png'))
 monokai_image = monokai_image.resize((24, 24), Image.LANCZOS)
 monokai_icon = ImageTk.PhotoImage(monokai_image)
 
-sunset_image = Image.open('ICONS/sunset.png')
+sunset_image = Image.open(os.path.join(icons_path, 'sunset.png'))
 sunset_image = sunset_image.resize((24, 24), Image.LANCZOS)
 sunset_icon = ImageTk.PhotoImage(sunset_image)
 
