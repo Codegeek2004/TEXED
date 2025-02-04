@@ -175,7 +175,7 @@ font_size.current(4)
 font_size.grid(row = 0, column = 1, padx = 5)
 
 # bold button
-bold_image = Image.open('ICONS/bold.png')
+bold_image = Image.open(os.path.join(icons_path, 'bold.png'))
 bold_image = bold_image.resize((24, 24), Image.LANCZOS)  
 bold_icon = ImageTk.PhotoImage(bold_image)
 
@@ -183,7 +183,7 @@ bold_btn = ttk.Button(tool_bar, image = bold_icon)
 bold_btn.grid(row = 0, column = 2, padx = 5)
 
 # italic button
-italic_image = Image.open('ICONS/italics.png')
+italic_image = Image.open(os.path.join(icons_path, 'italics.png'))
 italic_image = italic_image.resize((24, 24), Image.LANCZOS)  
 italic_icon = ImageTk.PhotoImage(italic_image)
 
@@ -191,7 +191,7 @@ italic_btn = ttk.Button(tool_bar, image = italic_icon)
 italic_btn.grid(row = 0, column = 4, padx = 5)
 
 #underline button
-underline_image = Image.open('ICONS/underline.png')
+underline_image = Image.open(os.path.join(icons_path, 'underline.png'))
 underline_image = underline_image.resize((24, 24), Image.LANCZOS)  
 underline_icon = ImageTk.PhotoImage(underline_image)
 
@@ -199,8 +199,7 @@ underline_btn = ttk.Button(tool_bar, image = underline_icon)
 underline_btn.grid(row = 0, column = 5, padx = 5)
 
 # font color button
-
-font_color_image = Image.open('ICONS/font_color.png')
+font_color_image = Image.open(os.path.join(icons_path, 'font_color.png'))
 font_color_image = font_color_image.resize((24, 24), Image.LANCZOS)  
 font_color_icon = ImageTk.PhotoImage(font_color_image)
 
@@ -208,8 +207,7 @@ font_color_btn = ttk.Button(tool_bar, image = font_color_icon)
 font_color_btn.grid(row = 0, column = 6, padx = 5)
 
 #align_right
-
-align_right_image = Image.open('ICONS/align_right.png')
+align_right_image = Image.open(os.path.join(icons_path, 'align_right.png'))
 align_right_image = align_right_image.resize((24, 24), Image.LANCZOS)  
 align_right_icon = ImageTk.PhotoImage(align_right_image)
 
@@ -217,8 +215,7 @@ align_right_btn = ttk.Button(tool_bar, image = align_right_icon)
 align_right_btn.grid(row = 0, column = 7, padx = 5)
 
 #align_left
-
-align_left_image = Image.open('ICONS/align_left.png')
+align_left_image = Image.open(os.path.join(icons_path, 'align_left.png'))
 align_left_image = align_left_image.resize((24, 24), Image.LANCZOS)  
 align_left_icon = ImageTk.PhotoImage(align_left_image)
 
@@ -226,8 +223,7 @@ align_left_btn = ttk.Button(tool_bar, image = align_left_icon)
 align_left_btn.grid(row = 0, column = 8, padx = 5)
 
 #centre
-
-align_center_image = Image.open('ICONS/align_center.png')
+align_center_image = Image.open(os.path.join(icons_path, 'align_center.png'))
 align_center_image = align_center_image.resize((24, 24), Image.LANCZOS)  
 align_center_icon = ImageTk.PhotoImage(align_center_image)
 
@@ -235,8 +231,7 @@ align_center_btn = ttk.Button(tool_bar, image = align_center_icon)
 align_center_btn.grid(row = 0, column = 9, padx = 5)
 
 #justify
-
-justify_image = Image.open('ICONS/justify.png')
+justify_image = Image.open(os.path.join(icons_path, 'justify.png'))
 justify_image = justify_image.resize((24, 24), Image.LANCZOS)  
 justify_icon = ImageTk.PhotoImage(justify_image)
 
