@@ -1,4 +1,5 @@
 import tkinter as tk
+from tkinter import PhotoImage
 from tkinter import ttk
 from tkinter import font, colorchooser, filedialog, messagebox
 import os
@@ -9,6 +10,9 @@ main_application = tk.Tk()
 main_application.geometry('1200x800')
 main_application.title('Texed')
 
+
+icon = PhotoImage(file = "icon.png")
+main_application.iconphoto(False,icon)
 
 if getattr(sys, 'frozen', False):
     # Running as an EXE
