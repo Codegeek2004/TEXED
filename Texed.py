@@ -10,10 +10,6 @@ main_application = tk.Tk()
 main_application.geometry('1200x800')
 main_application.title('Texed')
 
-
-icon = PhotoImage(file = "icon.png")
-main_application.iconphoto(False,icon)
-
 if getattr(sys, 'frozen', False):
     # Running as an EXE
     base_path = sys._MEIPASS
@@ -23,6 +19,18 @@ else:
 
 # Build the path to the 'ICONS' folder
 icons_path = os.path.join(base_path, "ICONS")
+
+from PIL import Image, ImageTk
+
+# Open the image
+icon_image = Image.open(os.path.join(icons_path, 'icon.png'))
+
+# Convert to a PhotoImage object
+icon = ImageTk.PhotoImage(icon_image)
+
+# Set the window icon
+main_application.iconphoto(False, icon)
+
 
 
 #**************************************main_menu_start*********************************
